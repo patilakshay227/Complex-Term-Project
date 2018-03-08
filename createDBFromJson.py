@@ -11,6 +11,9 @@ import datetime
 import sqlite3
 import traceback
 
+
+inputFile="/media/ashwin/E0C62B17C62AED8A/Study material/IIT Kgp/Sem2/Comple/Project/dailyCommentsJSON.txt"
+
 db = sqlite3.connect('commentdata.db')
 
 c = db.cursor()
@@ -50,15 +53,11 @@ def writeCommentInDB(comment):
     commentBody=comment[ 'commentBody']
     recCount=comment[ 'recommendationCount']
     sqlStat="INSERT INTO comments VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
-    try:
-        c.execute(sqlStat,(commentID,assetID, assetURL,userName,replyCount,parentID,userId,
+
+    c.execute(sqlStat,(commentID,assetID, assetURL,userName,replyCount,parentID,userId,
                            location, commentType,commentBody, recCount,createDate,
                            approveDate,updateDate, editorSel,status,userTitle,commentSeq ))
-    except sqlite3.IntegrityError:
-        with open("UniLog") as log:
-            log.write("Exception Integrity for commentId "+ str(commentID))
-    except Exception as e:
-        print "error",e
+
     if len(comment['replies'])>0:
         for rep in comment:
             writeCommentInDB(rep)
@@ -66,7 +65,7 @@ def writeCommentInDB(comment):
 
 def parseFile():
     noOfLinesParsed=0
-    with open("/media/ashwin/E0C62B17C62AED8A/Study material/IIT Kgp/Sem2/Comple/Project/dailyCommentsJSON.txt") as f:
+    with open(inputFile) as f:
         for line in f:
             try:
                 noOfLinesParsed+=1
