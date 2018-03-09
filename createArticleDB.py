@@ -31,6 +31,7 @@ c.execute('CREATE TABLE IF NOT EXISTS articles (id text ,\
                                                 webURL text,\
                                                 pubDate timestamp,\
                                                 multimedia integer,\
+                                                keywords text,\
                                                 section text )')
 
 
@@ -48,14 +49,24 @@ def writeArticleInDB(article):
     docType = article['document_type']
     webURL = article['web_url']
     pubDate = dp.parse(article['pub_date'])
+    temp = set()
     isMultimedia = 0
-    secName = article['section_name']
-    if len(article['multimedia']) > 0:
+    multimedias = article['multimedia']
+    if len(multimedias) > 0:
         isMultimedia = 1
 
-    sqlStat="INSERT INTO articles VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)"
+    keywordsString = None
+    keywords = article['keywords']
+    kw = []
+    if article:
+        for k in keywords:
+            kw.append(k['value'])
+        keywordsString = ';'.join(kw)
+    secName = article['section_name']
 
-    c.execute(sqlStat,(ID, newDesk, paragraph, mainHeadline, abstract, wordCount, snippet, source, docType, webURL, pubDate, isMultimedia, secName))
+    sqlStat="INSERT INTO articles VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+
+    c.execute(sqlStat,(ID, newDesk, paragraph, mainHeadline, abstract, wordCount, snippet, source, docType, webURL, pubDate, isMultimedia, keywordsString, secName))
 
 
 def parseFile():
