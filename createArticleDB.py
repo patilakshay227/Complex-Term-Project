@@ -6,20 +6,22 @@ Created on Thu Mar  8 20:45:43 2018
 @author: Akshay
 """
 import simplejson as json
-import pickle
-import datetime
+import os
 import sqlite3
 import traceback
 import dateutil.parser as dp
 
 
-inputFile="/home/akshay/IIT KGP/SEM 2/Complex Network/Term Project/articleJSON.txt"
+if os.path.exists("integritylog"):
+    os.remove("integritylog")
 
-db = sqlite3.connect('../articleDatabase.db')
+inputFile="../../Project/articleJSON.txt"
+
+db = sqlite3.connect('../commentdata.db')
 
 c = db.cursor()
 
-c.execute('CREATE TABLE IF NOT EXISTS articles (id text ,\
+c.execute('CREATE TABLE IF NOT EXISTS articles (id text PRIMARY KEY ,\
                                                 newsDesk text,\
                                                 paragraph text, \
                                                 mainHeadline text,\
@@ -73,16 +75,21 @@ def parseFile():
     noOfLinesParsed=0
     with open(inputFile) as f:
         for line in f:
+            noOfLinesParsed += 1
+
             try:
-                noOfLinesParsed+=1
                 line=json.loads(line)            
                 for record in line['response']['docs']:
                             writeArticleInDB(record)
-                
-                if(noOfLinesParsed%1000==0):
-                    print "No of lines Parsed : ",noOfLinesParsed
+            except sqlite3.IntegrityError as i:
+                with open("integritylog","a") as ilog:
+                    ilog.write("Line no : "+str(noOfLinesParsed)+"\n")
             except Exception as e:
-                print e.message
+                if e.message!='response':
+                    print e.message
+
+            if (noOfLinesParsed % 1000 == 0):
+                print "No of lines Parsed : ", noOfLinesParsed
 
         db.commit()
                 

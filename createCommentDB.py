@@ -10,10 +10,10 @@ import pickle
 import datetime
 import sqlite3
 import traceback
-from bs4 import BeautifulSoup
 
 
-inputFile="/home/akshay/IIT KGP/SEM 2/Complex Network/Term Project/dailyCommentsJSON.txt"
+
+inputFile="../../Project/dailyCommentsJSON.txt"
 
 db = sqlite3.connect('../commentdata.db')
 
