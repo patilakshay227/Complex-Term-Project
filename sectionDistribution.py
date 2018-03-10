@@ -5,7 +5,7 @@ db = sqlite3.connect('../commentsData.db')
 
 c = db.cursor()
 
-c.execute('select section, count(*) from ArticleSection GROUP BY section')
+c.execute("select section, count(*) as 'Count' from ArticleSection GROUP BY section ORDER BY Count")
 
 sections = []
 secCount = []
@@ -20,6 +20,9 @@ pos =  range(len(sections))
 print max(secCount)
 
 rect1 = plt.bar(pos, secCount, align= 'center')
+plt.ylabel('No of Articles')
+plt.xlabel('Section Names')
+plt.title('Section Distribution over Articles')
 plt.xticks(pos, sections)
 plt.xticks(rotation=90)
 
@@ -28,9 +31,10 @@ def autolabel(rects):
     for rect in rects:
         height = rect.get_height()
         plt.text(rect.get_x()+rect.get_width()/2., 1.01*height, '%d'%int(height),
-                ha='center', va='bottom')
+                ha='center', va='bottom', rotation = 90)
 
 autolabel(rect1)
 
 
-plt.show()
+#plt.show()
+plt.savefig("SectionDistibution")
