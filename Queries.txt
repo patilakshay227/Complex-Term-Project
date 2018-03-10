@@ -1,3 +1,7 @@
+Number of comments for which we have article data:
+select count(distinct(commentID)) from comments c,articles a where c.assetURL=a.webURL -- 896841
+
+
 Same userId , different username
 select count(distinct(t1.userID)) from comments t1,comments t2 where t1.userID=t2.userID and t1.username<>t2.username -- 2649
 
@@ -10,8 +14,23 @@ Distinct userids
 select count(distinct(userID)) from comments --  144614
 
 Comments on articles having section labelled
-select count(*) from comments c,articles a, ArticleSection s where c.assetURL=a.webURL and a.id=s.id - 896619
+select count(*) from comments c,artic	les a, ArticleSection s where c.assetURL=a.webURL and a.id=s.id - 896619
 
 Comments Distribution over Sections:
 select s.section as 'SectionName',count(*) as 'CommentsCount' from comments c,articles a, ArticleSection s where c.assetURL=a.webURL and a.id=s.id group by s.section order by CommentsCount desc
 
+
+Creating ArticleNewsDesk Table:
+
+create table ArticleNewsDesk as
+select id,newsDesk from articles where newsDesk is not NULL
+
+
+Distinct newsDesk and thier articles Count:
+
+select distinct(newsDesk),count(*) as 'Count' from ArticleNewsDesk group by newsDesk order by Count desc
+
+
+
+Comments count on newsDesk:
+select n.newsDesk as 'NewsDesk',count(*) as 'CommentsCount' from comments c,articles a, ArticleNewsDesk n where c.assetURL=a.webURL and a.id=n.id group by n.newsDesk order by CommentsCount desc
