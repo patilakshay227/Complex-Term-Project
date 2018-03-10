@@ -1,0 +1,17 @@
+Same userId , different username
+select count(distinct(t1.userID)) from comments t1,comments t2 where t1.userID=t2.userID and t1.username<>t2.username -- 2649
+
+select t1.userID,t1.username,t2.username from comments t1,comments t2 where t1.userID=t2.userID and t1.username<>t2.username group by t1.userID limit 10;
+
+select count(*) from comments where username='Anonymous' -- 359
+
+
+Distinct userids
+select count(distinct(userID)) from comments --  144614
+
+Comments on articles having section labelled
+select count(*) from comments c,articles a, ArticleSection s where c.assetURL=a.webURL and a.id=s.id - 896619
+
+Comments Distribution over Sections:
+select s.section as 'SectionName',count(*) as 'CommentsCount' from comments c,articles a, ArticleSection s where c.assetURL=a.webURL and a.id=s.id group by s.section order by CommentsCount desc
+
