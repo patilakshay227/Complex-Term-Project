@@ -17,9 +17,9 @@ import dateutil.parser as dp
 if os.path.exists("sectionintegritylog"):
     os.remove("sectionintegritylog")
 
-inputFile = "../../Project/articleJSON.txt"
+inputFile = "/home/akshay/IIT KGP/SEM 2/Complex Network/Term Project/articleJSON.txt"
 
-db = sqlite3.connect('../commentdata.db')
+db = sqlite3.connect('../commentsData.db')
 
 c = db.cursor()
 
@@ -32,7 +32,7 @@ def writeArticleInDB(article):
     sqlStat = "INSERT INTO ArticleSection VALUES(?,?)"
 
     if secName!=None and secName!='':
-        c.execute(sqlStat,(ID,sqlStat))
+        c.execute(sqlStat,(ID,secName))
 
 def parseFile():
     noOfLinesParsed = 0
