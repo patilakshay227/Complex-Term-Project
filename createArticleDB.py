@@ -15,10 +15,10 @@ import dateutil.parser as dp
 if os.path.exists("integritylog"):
     os.remove("integritylog")
 
-inputFile="../../Project/articleJSON.txt"
+inputFile="/home/akshay/IIT KGP/SEM 2/Complex Network/Term Project/articleJSON.txt"
 
-db = sqlite3.connect('../commentdata.db')
-
+db = sqlite3.connect('../commentsData.db')
+print 'connected to databse'
 c = db.cursor()
 
 c.execute('CREATE TABLE IF NOT EXISTS articles (id text PRIMARY KEY ,\

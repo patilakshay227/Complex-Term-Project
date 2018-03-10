@@ -13,9 +13,9 @@ import traceback
 
 
 
-inputFile="../../Project/dailyCommentsJSON.txt"
+inputFile="/home/akshay/IIT KGP/SEM 2/Complex Network/Term Project/dailyCommentsJSON.txt"
 
-db = sqlite3.connect('../commentdata.db')
+db = sqlite3.connect('../commentsData.db')
 
 c = db.cursor()
  
@@ -72,21 +72,20 @@ def parseFile():
     noOfLinesParsed=0
     with open(inputFile) as f:
         for line in f:
+            noOfLinesParsed += 1
             try:
-                noOfLinesParsed+=1
+
                 obj=json.loads(line)
                 for record in obj['results']['comments']:
-                            writeCommentInDB(record)            
-                
-                if(noOfLinesParsed%1000==0):
-                    print "No of lines Parsed : ",noOfLinesParsed
+                            writeCommentInDB(record)
             except sqlite3.IntegrityError as ie:
                 continue
             except Exception as e:
                 with open("log", "a") as log:
                     log.write("Error on line " + str(noOfLinesParsed) + "\n")
                     log.write(traceback.format_exc())
-
+            if (noOfLinesParsed % 1000 == 0):
+                print "No of lines Parsed : ", noOfLinesParsed
         db.commit()
                 
 if __name__ == "__main__":

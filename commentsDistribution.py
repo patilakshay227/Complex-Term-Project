@@ -5,8 +5,9 @@ db = sqlite3.connect('../commentsData.db')
 
 c = db.cursor()
 
-c.execute("select section, count(*) as 'Count' from ArticleSection GROUP BY section ORDER BY Count")
+c.execute("select s.section as 'SectionName',count(*) as 'CommentsCount' from comments c,articles a, ArticleSection s where c.assetURL=a.webURL and a.id=s.id group by s.section order by CommentsCount")
 
+print "queruy exec'ed"
 sections = []
 secCount = []
 
@@ -14,15 +15,13 @@ for t in c.fetchall():
     sections.append(t[0])
     secCount.append(t[1])
 
-
-
 pos =  range(len(sections))
 print max(secCount)
 
 rect1 = plt.bar(pos, secCount, align= 'center')
-plt.ylabel('No of Articles')
+plt.ylabel('No of Comments')
 plt.xlabel('Section Names')
-plt.title('Section Distribution over Articles')
+plt.title('Comments Distribution over Articles')
 plt.xticks(pos, sections)
 plt.xticks(rotation=90)
 
@@ -37,4 +36,4 @@ autolabel(rect1)
 
 
 #plt.show()
-plt.savefig("SectionDistibution.png", bbox_inches='tight')
+plt.savefig('commentsDistribution.png', bbox_inches='tight')

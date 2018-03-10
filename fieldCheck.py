@@ -20,15 +20,12 @@ def main():
 
 myd=dict()
 def readids():
-    with open("/media/ashwin/E0C62B17C62AED8A/Study material/IIT Kgp/Sem2/Comple/Project/good") as f:
+    with open("/home/akshay/IIT KGP/SEM 2/Complex Network/Term Project/articleJSON.txt") as f:
         for line in f:
             line=json.loads(line)            
-            for l in line['results']['comments']:
-                print l.keys()
-                break
-                id=l['assetID']
-                if l['commentTitle']!='<br/>':
-                    print l['commentTitle']
+            for l in line['response']['docs']:
+                print l['headline']
+
             break
     for key in myd.keys():
         print key,' : ', myd[key]
