@@ -5,42 +5,39 @@ import sexmachine.detector as gender
 db = sqlite3.connect('../commentdata.db')
 d = gender.Detector(case_sensitive=False)
 c = db.cursor()
+c.execute("create table if not exists commenterGender(userID int,username text,gender text,\
+PRIMARY KEY(userID,username))")
 c.execute("select userID,username from comments group by userID,username")
 
-male=open("Male.txt","w")
-female=open("Female.txt","w")
-andy=open("Andy.txt","w")
+sqlstat="insert into commenterGender values(?,?,?)"
+
 mcount=0
 fcount=0
 acount=0
 progress=0
 
 for result in c.fetchall():
-    id,name=str(result[0]),result[1]
+    id,name=result[0],result[1]
     names=name.split()
     if len(names[0])==1 and len(names)>1:
         name=names[1]
     else:
         name=names[0]
     gen=d.get_gender(name)
-    res=id+"\t"+result[1]+"\t"+gen+"\n"
-    res=res.encode('utf-8')
     if gen=="male" or gen=="mostly_male" :
-        male.write(res)
+        c.execute(sqlstat,(id,result[1],"male"))
         mcount+=1
     elif gen=="female" or gen=="mostly_female":
-        female.write(res)
+        c.execute(sqlstat,( id, result[1], "female"))
         fcount+=1
     else:
-        andy.write(res)
+        c.execute(sqlstat, (id, result[1], "andy"))
         acount+=1
     progress+=1
     if(progress%100000==0):
         print progress," records processed"
 
-male.close()
-female.close()
-andy.close()
+db.commit()
 c.close()
 
 with open("GenderCounts.txt","w") as g:
