@@ -54,3 +54,11 @@ select C.userID, count(distinct C.assetURL) as artCount from comments C, comment
 
 --male Comments
 select t1.userID, t2.userName, t1.commentBody from comments t1, commenterGender t2 where t1.userID = t2.userID and t2.gender = 'male');
+
+
+## Average number of comments per article per section
+select section,count(*)/count(distinct(webURL))
+from
+(select section,webURL from articles group by section,webURL) as t1 LEFT OUTER JOIN
+comments c ON c.assetURL=t1.webURL
+group by section

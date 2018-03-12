@@ -1,2 +1,13 @@
 No of Comments Available : 896841  ( select count(c.commentID) from comments c,articles a where c.assetURL=a.webURL )
 
+No of comments as per gender : select gender,count(*)  from comments c,commenterGender g where c.userID=g.userID and c.username=g.username group by gender
+andy	430854
+female	118567
+male	347420
+
+
+select section,count(*)/count(distinct(webURL))
+from
+(select section,webURL from articles group by section,webURL) as t1 LEFT OUTER JOIN
+comments c ON c.assetURL=t1.webURL
+group by section
