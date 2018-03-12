@@ -1,0 +1,2 @@
+No of Comments Available : 896841  ( select count(c.commentID) from comments c,articles a where c.assetURL=a.webURL )
+

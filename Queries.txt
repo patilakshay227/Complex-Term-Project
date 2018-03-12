@@ -1,3 +1,6 @@
+delete from comments where assetURL not in ( select distinct(webURL) from articles )
+
+
 Number of comments for which we have article data:
 select count(distinct(commentID)) from comments c,articles a where c.assetURL=a.webURL -- 896841
 

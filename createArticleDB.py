@@ -15,7 +15,7 @@ import dateutil.parser as dp
 if os.path.exists("integritylog"):
     os.remove("integritylog")
 
-inputFile="/home/akshay/IIT KGP/SEM 2/Complex Network/Term Project/articleJSON.txt"
+inputFile="../../Project/articleJSON.txt"
 
 db = sqlite3.connect('../commentsData.db')
 print 'connected to databse'
