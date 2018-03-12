@@ -34,3 +34,11 @@ select distinct(newsDesk),count(*) as 'Count' from ArticleNewsDesk group by news
 
 Comments count on newsDesk:
 select n.newsDesk as 'NewsDesk',count(*) as 'CommentsCount' from comments c,articles a, ArticleNewsDesk n where c.assetURL=a.webURL and a.id=n.id group by n.newsDesk order by CommentsCount desc
+
+
+No Of Articles commented on by user:
+SELECT userID, COUNT(DISTINCT assetURL) as ArticlesCount from comments group by userID order by ArticlesCount desc
+
+
+how many sections different commenters show interest:
+SELECT C.userID, count(distinct section) as secCount from comments C, articles A where C.assetURL = A.webURL and section is not null group by C.userID order by secCount
