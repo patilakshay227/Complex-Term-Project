@@ -10,6 +10,7 @@ import pickle
 import datetime
 import sqlite3
 import traceback
+from bs4 import BeautifulSoup
 
 
 
@@ -51,9 +52,9 @@ def writeCommentInDB(comment):
     commentType=comment[ 'commentType']
     updateDate=datetime.datetime.fromtimestamp(float(comment[ 'updateDate']))
     commentSeq=comment[ 'commentSequence']
-    #soup  = BeautifulSoup(comment[ 'commentBody'])
-    #commentBody= ' '.join(soup.find_all(text=True))
-    commentBody = comment[ 'commentBody']
+    soup  = BeautifulSoup(comment[ 'commentBody'])
+    commentBody= ' '.join(soup.find_all(text=True))
+    #commentBody = comment[ 'commentBody']
     recCount=comment[ 'recommendationCount']
     sqlStat="INSERT INTO comments VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
 
