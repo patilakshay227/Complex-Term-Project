@@ -57,8 +57,8 @@ select t1.userID, t2.userName, t1.commentBody from comments t1, commenterGender 
 
 
 ## Average number of comments per article per section
-select section,count(*)/count(distinct(webURL))
+select section,ROUND(cast(count(c.assetURL) AS FLOAT)  /count(distinct(webURL)),3)
 from
 (select section,webURL from articles group by section,webURL) as t1 LEFT OUTER JOIN
-comments c ON c.assetURL=t1.webURL
+comments c ON c.assetURL=t1.webURL where section is not NULL
 group by section
