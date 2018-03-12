@@ -35,5 +35,5 @@ def autolabel(rects):
 autolabel(rect1)
 
 
-#plt.show()
-plt.savefig('commentsDistribution.png', bbox_inches='tight')
+plt.show()
+#plt.savefig('commentsDistribution.png', bbox_inches='tight')
