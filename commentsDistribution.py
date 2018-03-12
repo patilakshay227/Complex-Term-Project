@@ -21,7 +21,7 @@ print max(secCount)
 rect1 = plt.bar(pos, secCount, align= 'center')
 plt.ylabel('No of Comments')
 plt.xlabel('Section Names')
-plt.title('Comments Distribution over Articles')
+plt.title('Comments Distribution over Sections')
 plt.xticks(pos, sections)
 plt.xticks(rotation=90)
 
