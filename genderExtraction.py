@@ -2,7 +2,7 @@ import sqlite3
 import sexmachine.detector as gender
 
 
-db = sqlite3.connect('../commentdata.db')
+db = sqlite3.connect('../commentsData.db')
 d = gender.Detector(case_sensitive=False)
 c = db.cursor()
 c.execute("create table if not exists commenterGender(userID int,username text,gender text,\

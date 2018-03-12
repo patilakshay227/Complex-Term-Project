@@ -42,3 +42,12 @@ SELECT userID, COUNT(DISTINCT assetURL) as ArticlesCount from comments group by 
 
 how many sections different commenters show interest:
 SELECT C.userID, count(distinct section) as secCount from comments C, articles A where C.assetURL = A.webURL and section is not null group by C.userID order by secCount desc
+
+No Of Articles commented on by male user:
+select C.userID, count(distinct C.assetURL) as artCount from comments C, commenterGender CG where C.userID = CG.userID and CG.gender =   'male' group by C.userID order by artCount desc;
+
+No Of Articles commented on by female user:
+select C.userID, count(distinct C.assetURL) as artCount from comments C, commenterGender CG where C.userID = CG.userID and CG.gender =   'female' group by C.userID order by artCount desc;
+
+--male Comments
+select t1.userID, t2.userName, t1.commentBody from comments t1, commenterGender t2 where t1.userID = t2.userID and t2.gender = 'male');

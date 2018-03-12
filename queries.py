@@ -36,5 +36,5 @@ def autolabel(rects):
 autolabel(rect1)
 
 
-#plt.show()
-plt.savefig("SectionDistibution.png", bbox_inches='tight')
+plt.show()
+#plt.savefig("SectionDistibution.png", bbox_inches='tight')
