@@ -41,4 +41,4 @@ SELECT userID, COUNT(DISTINCT assetURL) as ArticlesCount from comments group by 
 
 
 how many sections different commenters show interest:
-SELECT C.userID, count(distinct section) as secCount from comments C, articles A where C.assetURL = A.webURL and section is not null group by C.userID order by secCount
+SELECT C.userID, count(distinct section) as secCount from comments C, articles A where C.assetURL = A.webURL and section is not null group by C.userID order by secCount desc
