@@ -1,11 +1,11 @@
 import sqlite3
 import matplotlib.pyplot as plt
 
-db = sqlite3.connect('../commentsData.db')
+db = sqlite3.connect('../../commentsData.db')
 
 c = db.cursor()
 
-c.execute("SELECT userID, COUNT(DISTINCT assetURL) as ArticlesCount from comments group by userID order by ArticlesCount desc")
+c.execute("SELECT C.userID, COUNT(DISTINCT assetURL) as ArticlesCount from comments C,articles A where A.webURL = C.assetURL group by userID order by ArticlesCount desc")
 
 print "queruy exec'ed"
 userids = []

@@ -1,7 +1,7 @@
 import sqlite3
 import matplotlib.pyplot as plt
 
-db = sqlite3.connect('../commentsData.db')
+db = sqlite3.connect('../../commentsData.db')
 
 c = db.cursor()
 

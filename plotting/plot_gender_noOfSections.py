@@ -5,7 +5,7 @@ db = sqlite3.connect('../../commentsData.db')
 
 c = db.cursor()
 
-c.execute("select C.userID, count(distinct C.assetURL) as artCount from comments C, commenterGender CG, articles A where C.assetURL = A.webURL and C.userID = CG.userID and CG.gender = 'female' group by C.userID order by artCount desc;")
+c.execute("select C.userID, count(distinct A.section) as artCount from comments C, commenterGender CG, articles A where C.assetURL = A.webURL and C.userID = CG.userID and CG.gender = 'female' group by C.userID order by artCount desc;")
 
 print "queruy exec'ed"
 fuserids = []
@@ -21,7 +21,7 @@ print max(farticlesCount)
 plt.plot(pos, farticlesCount, marker = '.', linewidth = 0, color = 'red', label = 'Female')
 
 
-c.execute("select C.userID, count(distinct C.assetURL) as artCount from comments C, commenterGender CG, articles A where C.assetURL = A.webURL and C.userID = CG.userID and CG.gender =   'male' group by C.userID order by artCount desc;")
+c.execute("select C.userID, count(distinct A.section) as artCount from comments C, commenterGender CG, articles A where C.assetURL = A.webURL and C.userID = CG.userID and CG.gender =   'male' group by C.userID order by artCount desc;")
 
 muserids = []
 marticlesCount = []
@@ -37,10 +37,10 @@ plt.plot(pos, marticlesCount, marker = '.', linewidth = 0, color = 'blue', label
 
 
 #rect1 = plt.bar(pos, secCount, align= 'center')
-plt.ylabel('No of Articles')
+plt.ylabel('No of Sections')
 plt.xlabel('Commenters')
 plt.legend()
-plt.title('Articles Distribution over Male and Female Commenters')
+plt.title('Sections Distribution over Male and Female Commenters')
 #plt.xticks(pos, userids)
 plt.xticks(rotation=0)
 
