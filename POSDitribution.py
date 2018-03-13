@@ -18,15 +18,15 @@ c = db.cursor()
 #c.execute("insert into maleComments select A.userID, A.username, A.commentBody from comments A join commenterGender B where B.gender="male" and A.userID = B.userID and A.username = B.username")
 
 
-c.execute("select userID, username, comment from "+GENDER+"Comments")
+c.execute("select userID, username, comment from "+GENDER+"Comments LIMIT 5")
 tags = {'VERB':0,'NOUN':0,'PRON':0,'ADJ':0,'ADV':0, 'ADP':0,'CONJ':0,'DET':0,'NUM':0,'PRT':0,'X':0,'.':0}
 
 
 words_count = 0
 comments_count = 0
 file_count = 0
-filename = "./"+GENDER+"_comments/"+GENDER+"_comments_"+str(file_count)+".txt"
-file = open(filename, "wb")
+#filename = "./"+GENDER+"_comments/"+GENDER+"_comments_"+str(file_count)+".txt"
+#file = open(filename, "wb")
 # tags = []
 # NN = 0
 for result in c.fetchall():
@@ -55,14 +55,17 @@ for result in c.fetchall():
     # file.write(comment)
     # file.write("\n\n\n")
         
-    print tags.items()
-
+    #print tags.items()
+    comments_count += 1
     if(comments_count%100000==0):
         print comments_count," records processed"
 
 # print "Avg word_count per "+GENDER+"_Comment :"+str(words_count/comments_count)
 
-del l['.']
+
+print "Tags: ", tags, '\n\n'
+
+print tags.pop('.', None)
 count_tags = tags.items()
 
 #count_tags = [('ADV', 738714), ('ADP', 1177188), ('DET', 1100886), ('VERB', 2161791), ('X', 15320), ('CONJ', 398224), ('ADJ', 1030634), ('NOUN', 2945142), ('PRT', 388112), ('PRON', 741393), ('NUM', 99730)]
@@ -75,12 +78,11 @@ print total_tags
 percnt_tags = []
 
 for val in count_tags:
-    l = []
-    l.append(val[0])
     temp = float(val[1])*100/total_tags
-    l.append(temp)
-    percnt_tags.append(l)
+    percnt_tags.append((val[0], temp))
 
-print percnt_tags
+
+for elem in percnt_tags:
+	print elem[0], elem[1]
 db.commit()
 c.close()
