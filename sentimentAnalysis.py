@@ -1,11 +1,11 @@
 from textblob import TextBlob
 import sqlite3
 
-db = sqlite3.connect('../commentsData.db')
+db = sqlite3.connect('./commentsData.db')
 c = db.cursor()
 
 c.execute("select commentBody,g.gender from comments c,commenterGender g where c.userID=g.userID and\
-            c.username=g.username and gender='male' or gender='female' ")
+            c.username=g.username and gender='female' ")
 
 malePositive=0
 maleNegative=0
@@ -41,9 +41,16 @@ def updateCount(comment,gen):
 for t in c.fetchall():
     progress+=1
     updateCount(t[0],t[1])
-    if progress%50000==0:
+    if progress%1000==0:
         print progress," Comments processed"
 
-print "male positive ",malePositive," male negative ",maleNegative," male neutral ",maleNeutral
+mmsg="male positive "+malePositive+" male negative "+maleNegative+" male neutral "+maleNeutral
 
-print "female positive ",femalPositive," female negative ",femaleNegative," female netural",femaleNeutral
+fmsg="female positive "+femalPositive+" female negative "+femaleNegative+" female netural"+femaleNeutral
+
+with open("male","w") as f:
+	f.write(mmsg)
+
+with open("female","w") as f:
+	f.write(fmsg)
+
