@@ -22,12 +22,10 @@ plt.plot(pos, articlesCount, marker = '.', linewidth = 0)
 #rect1 = plt.bar(pos, secCount, align= 'center')
 plt.ylabel('No of Articles')
 plt.xlabel('Commenters')
-plt.title('Articles Distribution over Commenters')
+plt.title('Frequency of Articles over Commenters')
+
 #plt.xticks(pos, userids)
 plt.xticks(rotation=0)
-
-
-
-
+plt.yscale('log')
 plt.show()
 #plt.savefig('commentsDistribution.png', bbox_inches='tight')

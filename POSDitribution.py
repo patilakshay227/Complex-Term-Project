@@ -8,7 +8,7 @@ import sexmachine.detector as gender
 import nltk
 import string
 from textblob import TextBlob
-GENDER = 'male'
+GENDER = 'andy'
 
 db = sqlite3.connect('../commentsData.db')
 d = gender.Detector(case_sensitive=False)
@@ -18,7 +18,7 @@ c = db.cursor()
 #c.execute("insert into maleComments select A.userID, A.username, A.commentBody from comments A join commenterGender B where B.gender="male" and A.userID = B.userID and A.username = B.username")
 
 
-c.execute("select userID, username, comment from "+GENDER+"Comments LIMIT 5")
+c.execute("select C.userID, C.username, C.commentBody from commenterGender CG, comments C where C.userID = CG.userID and C.username = CG.username and gender = 'andy'")
 tags = {'VERB':0,'NOUN':0,'PRON':0,'ADJ':0,'ADV':0, 'ADP':0,'CONJ':0,'DET':0,'NUM':0,'PRT':0,'X':0,'.':0}
 
 
@@ -57,7 +57,7 @@ for result in c.fetchall():
         
     #print tags.items()
     comments_count += 1
-    if(comments_count%100000==0):
+    if(comments_count%10000==0):
         print comments_count," records processed"
 
 # print "Avg word_count per "+GENDER+"_Comment :"+str(words_count/comments_count)
@@ -83,6 +83,6 @@ for val in count_tags:
 
 
 for elem in percnt_tags:
-	print elem[0], elem[1]
+	print elem[0], "\t{0:.2f}".format(elem[1])
 db.commit()
 c.close()

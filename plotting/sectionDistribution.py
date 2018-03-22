@@ -1,11 +1,11 @@
 import sqlite3
 import matplotlib.pyplot as plt
 
-db = sqlite3.connect('../commentsData.db')
+db = sqlite3.connect('../../commentsData.db')
 
 c = db.cursor()
 
-c.execute("select section, count(*) as 'Count' from ArticleSection GROUP BY section ORDER BY Count")
+c.execute("select section, count(*) as 'Count' from ArticleSection where section <> 'false' GROUP BY section ORDER BY Count")
 
 sections = []
 secCount = []
@@ -22,7 +22,7 @@ print max(secCount)
 rect1 = plt.bar(pos, secCount, align= 'center')
 plt.ylabel('No of Articles')
 plt.xlabel('Section Names')
-plt.title('Section Distribution over Articles')
+plt.title('Number of Articles Per Section')
 plt.xticks(pos, sections)
 plt.xticks(rotation=90)
 

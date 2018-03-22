@@ -5,7 +5,7 @@ db = sqlite3.connect('../../commentsData.db')
 
 c = db.cursor()
 
-c.execute("select C.userID, count(distinct C.assetURL) as artCount from comments C, commenterGender CG, articles A where C.assetURL = A.webURL and C.userID = CG.userID and CG.gender = 'female' group by C.userID order by artCount desc;")
+c.execute("select C.userID, count(distinct A.section) as artCount from comments C, commenterGender CG, articles A where C.assetURL = A.webURL and C.userID = CG.userID and CG.gender =   'female' group by C.userID order by artCount desc;")
 
 print "queruy exec'ed"
 
@@ -58,10 +58,11 @@ for e in sorted(skeys):
 print max(yvals)
 
 rect1 = plt.bar(ind, yvals, width, align= 'center', color = 'red', label = 'Female')
+plt.xticks(ind, xvals)
 #plt.plot(pos, farticlesCount, marker = '.', linewidth = 0, color = 'red', label = 'Female')
 
 
-c.execute("select C.userID, count(distinct C.assetURL) as artCount from comments C, commenterGender CG, articles A where C.assetURL = A.webURL and C.userID = CG.userID and CG.gender =   'male' group by C.userID order by artCount desc;")
+c.execute("select C.userID, count(distinct A.section) as artCount from comments C, commenterGender CG, articles A where C.assetURL = A.webURL and C.userID = CG.userID and CG.gender =   'male' group by C.userID order by artCount desc;")
 
 a=[]
 freq=dict()
@@ -113,6 +114,7 @@ for e in sorted(skeys):
 print max(yvals)
 
 rect2 = plt.bar(ind, yvals, width, align= 'center', color = 'blue', label = 'Male')
+
 # plt.plot(pos, marticlesCount, marker = '.', linewidth = 0, color = 'blue', label = 'Male')
 #
 
@@ -126,10 +128,9 @@ autolabel(rect1)
 autolabel(rect2)
 # #rect1 = plt.bar(pos, secCount, align= 'center')
 plt.ylabel('No of Commenters')
-plt.xlabel('No of Articles Ranges')
+plt.xlabel('No of Section Ranges')
 plt.legend()
 #plt.title('Frequecy of Articles Male Commenters')
-plt.xticks(ind, xvals)
 plt.xticks(rotation=0)
 
 

@@ -5,10 +5,12 @@ db = sqlite3.connect('../../commentsData.db')
 
 c = db.cursor()
 
-c.execute("select section,ROUND(cast(count(c.assetURL) AS FLOAT)  /count(distinct(webURL)),2) from\
+c.execute("select section,ROUND(cast(count(c.assetURL) AS FLOAT) /count(distinct(webURL)),2) as Avrg from\
  (select section,webURL from articles group by section,webURL) as t1 LEFT OUTER JOIN\
- comments c ON c.assetURL=t1.webURL where section is not NULL\
- group by section")
+ comments c ON c.assetURL=t1.webURL where section is not NULL and section <> 'false' and c.assetURL in (\
+ select webURL from articles a,comments c\
+ where a.webURL=c.assetURL group by webURL having count(*)>5 )\
+ group by section order by Avrg")
 
 print "queruy exec'ed"
 sections = []
@@ -32,7 +34,7 @@ plt.xticks(rotation=90)
 def autolabel(rects):
     for rect in rects:
         height = rect.get_height()
-        plt.text(rect.get_x()+rect.get_width()/2., 1.01*height, '{}'.format(height),
+        plt.text(rect.get_x()+rect.get_width()/2., 1.01*height, '{0:.1f}'.format(height),
                 ha='center', va='bottom',fontsize= 8)
 
 autolabel(rect1)
