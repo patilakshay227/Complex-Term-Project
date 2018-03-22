@@ -4,32 +4,38 @@ import sqlite3
 db = sqlite3.connect('../commentsData.db')
 c = db.cursor()
 
-c.execute("select commentBody,g.gender from comments c,commenterGender g where c.userID=g.userID and\
+c.execute("CREATE TABLE IF NOT EXISTS CommentSent (commentID int,sentiment int,gender text,PRIMARY KEY (commentID))")
+
+c.execute("select commentBody,g.gender,commentID from comments c,commenterGender g where c.userID=g.userID and\
             c.username=g.username and gender='male' ")
 
-malePositive=0
-maleNegative=0
-maleNeutral=0
-femalPositive=0
-femaleNegative=0
-femaleNeutral=0
-progress=0
+sqlstat = "insert into CommentSent values(?,?,?)"
 
-f=open("maleSentiments","w")
-
+progress = 0
 
 for t in c.fetchall():
-    progress+=1
-    comment=t[0]
-    gen=t[1]
-    com=TextBlob(comment)
+    progress += 1
+    comment = t[0]
+    gen = t[1]
+    comID = t[2]
+    com = TextBlob(comment)
 
-    polar=com.sentiment.polarity
-
+    polar = com.sentiment.polarity
+    sent = 0
     if gen == 'male':
-        f.write(str(polar)+"\n")
-          
-    if progress%10000==0:
-        print progress," Comments processed"
-f.close()
+        if polar <= -0.2:
+            sent = -1
+        elif polar >= 0.2:
+            sent = 1
+        else:
+            sent = 0
+
+        c.execute(sqlstat, (comID, sent, 'male'))
+
+    if progress % 10000 == 0:
+        print progress, " Comments processed"
+
+db.commit()
+db.close()
+
 

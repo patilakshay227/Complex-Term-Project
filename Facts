@@ -11,3 +11,10 @@ from
 (select section,webURL from articles group by section,webURL) as t1 LEFT OUTER JOIN
 comments c ON c.assetURL=t1.webURL
 group by section
+
+
+U.S.	77302
+World	72599
+Sports	49454
+Business Day	39859
+Arts	15226

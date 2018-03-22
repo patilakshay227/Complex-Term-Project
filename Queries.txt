@@ -62,3 +62,16 @@ from
 (select section,webURL from articles group by section,webURL) as t1 LEFT OUTER JOIN
 comments c ON c.assetURL=t1.webURL where section is not NULL
 group by section
+
+
+
+Section wise sentiment count
+select section,count(*) as total,COUNT(CASE WHEN cs.gender = 'male' then 1 ELSE NULL END) as "Male_Count",
+    COUNT(CASE WHEN cs.gender = 'male' and cs.sentiment=-1 then 1 ELSE NULL END) as "Male_Negative",
+    COUNT(CASE WHEN cs.gender = 'male' and cs.sentiment=1 then 1 ELSE NULL END) as "Male_Positive",
+    COUNT(CASE WHEN cs.gender = 'male' and cs.sentiment=0 then 1 ELSE NULL END) as "Male_Neutral",
+    COUNT(CASE WHEN cs.gender = 'female' then 1 ELSE NULL END) as "Female_Count",
+    COUNT(CASE WHEN cs.gender = 'female' and cs.sentiment=-1 then 1 ELSE NULL END) as "Female_Negative",
+    COUNT(CASE WHEN cs.gender = 'female' and cs.sentiment=1 then 1 ELSE NULL END) as "Female_Positive",
+    COUNT(CASE WHEN cs.gender = 'female' and cs.sentiment=0 then 1 ELSE NULL END) as "Female_Neutral"
+     from articles a,comments c,CommentSent cs where c.commentID=cs.commentID and a.webURL=c.assetURL and section in ('U.S.','World','Sports','Business Day','Arts')  group by section
