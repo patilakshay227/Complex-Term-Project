@@ -25,6 +25,7 @@ tagConvert = {
     
 }
 
+log = open('namedEntityLog.txt', 'w')
 
 
 c.execute("create table if not exists namedEntities(entity text, entityType text, userID int,gender text)")
@@ -33,7 +34,7 @@ c.execute("create table if not exists namedEntities(entity text, entityType text
 # **** Change maleComments to femaleComments for adding female data
 gender = 'male'
 
-c.execute("select userID, comment from maleComments LIMIT 500")
+c.execute("select userID, comment from maleComments")
 
 sqlstat="insert into namedEntities values(?,?,?,?)"
 
@@ -63,8 +64,12 @@ for res in c.fetchall():
             for e in text.entities:
                 #print e.tag
                 ne.add((tagConvert[e.tag] , ' '.join(e)))
-        except:
+        except Exception as e:
             print 'error'
+            log.write(str(res))
+            log.write('\t')
+            log.write(str(e))
+            log.write('\n')
 
 
 
@@ -102,14 +107,20 @@ for res in c.fetchall():
             c.execute(sqlstat, (e[1], e[0], userID, gender))
             #print e[1], e[0], userID, 'male'
     
-    except e:
-        print 'error',e
-        pass
+    except Exception as e:
+        print 'Outside error'
+        log.write(str(res))
+        log.write('\t')
+        log.write(str(e))
+        log.write('\n')
+
     
-    if (recProc % 10 ) == 0:
+    if (recProc % 100 ) == 0:
+    	db.commit()
         print recProc, ' records processed.'
 
 db.commit()
+log.close()
 
 
 
