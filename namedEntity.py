@@ -17,20 +17,23 @@ tagConvert = {
     'I-ORG': 'ORGANIZATION',
     'I-PER': 'PERSON',
     'GPE'  : 'LOCATION',
+    'GSP'  : 'LOCATION',
     'PERSON':  'PERSON',
-    'ORGANIZATION': 'ORGANIZATION'
-    'LOCATION': 'LOCATION'
+    'ORGANIZATION': 'ORGANIZATION',
+    'LOCATION': 'LOCATION',
     'FACILITY' : 'FACILITY'
     
 }
 
 
-# c.execute("create table if not exists commenterGender(userID int,username text,gender text,\
-# PRIMARY KEY(userID,username))")
 
 c.execute("create table if not exists namedEntities(entity text, entityType text, userID int,gender text)")
 
-c.execute("select userID, comment from maleComments LIMIT 100")
+
+# **** Change maleComments to femaleComments for adding female data
+gender = 'male'
+
+c.execute("select userID, comment from maleComments LIMIT 500")
 
 sqlstat="insert into namedEntities values(?,?,?,?)"
 
@@ -74,14 +77,14 @@ for res in c.fetchall():
 #                 ne.add((tag, " ".join(w for w,t in chunk)))
 
 
-#         # nltk NE Extraction
-#         for sent in nltk.sent_tokenize(comment):
-#             try:
-#                 for chunk in nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(sent))):
-#                       if hasattr(chunk, 'label'):
-#                         ne.add((chunk.label(), ' '.join(c[0] for c in chunk)))
-#             except UnicodeEncodeError:
-#                 pass
+        # nltk NE Extraction
+        for sent in nltk.sent_tokenize(comment):
+            try:
+                for chunk in nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(sent))):
+                      if hasattr(chunk, 'label'):
+                        ne.add((tagConvert[chunk.label()], ' '.join(c[0] for c in chunk)))
+            except UnicodeEncodeError:
+                pass
 
 
         for e in ne:
@@ -96,11 +99,10 @@ for res in c.fetchall():
             if escape:
                 continue
 
-            c.execute(sqlstat, (e[1], e[0], userID, "male"))
-            print e[1], e[0], userID, 'male'
+            c.execute(sqlstat, (e[1], e[0], userID, gender))
+            #print e[1], e[0], userID, 'male'
     
     except e:
-        
         print 'error',e
         pass
     
