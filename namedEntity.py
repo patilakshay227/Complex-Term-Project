@@ -15,13 +15,22 @@ c = db.cursor()
 tagConvert = {
     'I-LOC':'LOCATION',
     'I-ORG': 'ORGANIZATION',
-    'I-PER': 'PERSON'
+    'I-PER': 'PERSON',
+    'GPE'  : 'LOCATION',
+    'PERSON':  'PERSON',
+    'ORGANIZATION': 'ORGANIZATION'
+    'LOCATION': 'LOCATION'
+    'FACILITY' : 'FACILITY'
+    
 }
 
 
+# c.execute("create table if not exists commenterGender(userID int,username text,gender text,\
+# PRIMARY KEY(userID,username))")
+
 c.execute("create table if not exists namedEntities(entity text, entityType text, userID int,gender text)")
 
-c.execute("select userID, comment from maleComments LIMIT 10")
+c.execute("select userID, comment from maleComments LIMIT 100")
 
 sqlstat="insert into namedEntities values(?,?,?,?)"
 
@@ -56,13 +65,24 @@ for res in c.fetchall():
 
 
 
+#           # Standford NER
+#         tokenized_text = nltk.word_tokenize(comment)
+#         classified_text = st.tag(tokenized_text)
 
-        tokenized_text = nltk.word_tokenize(comment)
-        classified_text = st.tag(tokenized_text)
+#         for tag, chunk in groupby(classified_text, lambda x:x[1]):
+#             if tag != "O":
+#                 ne.add((tag, " ".join(w for w,t in chunk)))
 
-        for tag, chunk in groupby(classified_text, lambda x:x[1]):
-            if tag != "O":
-                ne.add((tag, " ".join(w for w,t in chunk)))
+
+#         # nltk NE Extraction
+#         for sent in nltk.sent_tokenize(comment):
+#             try:
+#                 for chunk in nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(sent))):
+#                       if hasattr(chunk, 'label'):
+#                         ne.add((chunk.label(), ' '.join(c[0] for c in chunk)))
+#             except UnicodeEncodeError:
+#                 pass
+
 
         for e in ne:
             escape = False
@@ -77,18 +97,17 @@ for res in c.fetchall():
                 continue
 
             c.execute(sqlstat, (e[1], e[0], userID, "male"))
-            #print e[1], e[0], userID, 'male'
+            print e[1], e[0], userID, 'male'
     
     except e:
+        
         print 'error',e
         pass
     
     if (recProc % 10 ) == 0:
-        db.commit()
         print recProc, ' records processed.'
 
 db.commit()
-
 
 
 
