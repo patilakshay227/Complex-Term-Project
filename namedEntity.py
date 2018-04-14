@@ -25,16 +25,20 @@ tagConvert = {
     
 }
 
-log = open('namedEntityLog.txt', 'w')
+log = open('namedEntityLog2.txt', 'w')
+log.close()
 
 
 c.execute("create table if not exists namedEntities(entity text, entityType text, userID int,gender text)")
 
 
 # **** Change maleComments to femaleComments for adding female data
-gender = 'male'
+gender = 'female'
 
-c.execute("select userID, comment from maleComments")
+c.execute("select userID, comment from femaleComments")
+
+#c.execute("select A.userID, A.commentBody from comments A join commenterGender B where B.gender='andy' and A.userID = B.userID and A.username = B.username")
+
 
 sqlstat="insert into namedEntities values(?,?,?,?)"
 
@@ -48,6 +52,7 @@ st = StanfordNERTagger(stanford_classifier, stanford_ner_path,  encoding='utf-8'
 punctuations = string.punctuation
 
 recProc = 0
+skips = 0
 
 for res in c.fetchall():
     recProc += 1
@@ -66,20 +71,13 @@ for res in c.fetchall():
                 ne.add((tagConvert[e.tag] , ' '.join(e)))
         except Exception as e:
             print 'error'
-            log.write(str(res))
-            log.write('\t')
-            log.write(str(e))
-            log.write('\n')
+            skips += 1
+            with open('namedEntityLog3.txt', 'a') as log:
+                log.write(str(res))
+                log.write('\t')
+                log.write(str(e))
+                log.write('\n')
 
-
-
-#           # Standford NER
-#         tokenized_text = nltk.word_tokenize(comment)
-#         classified_text = st.tag(tokenized_text)
-
-#         for tag, chunk in groupby(classified_text, lambda x:x[1]):
-#             if tag != "O":
-#                 ne.add((tag, " ".join(w for w,t in chunk)))
 
 
         # nltk NE Extraction
@@ -109,18 +107,23 @@ for res in c.fetchall():
     
     except Exception as e:
         print 'Outside error'
-        log.write(str(res))
-        log.write('\t')
-        log.write(str(e))
-        log.write('\n')
+        skips+=1
+        with open('namedEntityLog2.txt', 'a') as log:
+            log.write(str(res))
+            log.write('\t')
+            log.write(str(e))
+            log.write('\n')
 
     
-    if (recProc % 100 ) == 0:
-    	db.commit()
+    if (recProc % 100) == 0:
+        db.commit()
         print recProc, ' records processed.'
 
 db.commit()
-log.close()
+
+with open('namedEntityLog2.txt', 'a') as log:
+    log.write('\nTotal Comments Skipped : {}\n'.format(skips))
+
 
 
 
@@ -154,7 +157,7 @@ log.close()
 
 
 # tagConvert = {
-	
+
 # }
 
 
