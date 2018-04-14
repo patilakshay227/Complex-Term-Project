@@ -1,6 +1,12 @@
 delete from comments where assetURL not in ( select distinct(webURL) from articles )
 
 
+--To know the percentage of entities used by females
+select entity, round((count(*) * 100.0)/total, 4) from (select sum(cc) as total from (select count(*) as cc from namedEntities where gender = 'male' group by entity having cc > 9)),
+ namedEntities   where gender =  'male' and entity not in (select entity from namedEntities where gender <> 'andy' group by entity order by count(*) desc LIMIT 15) group by entity order by count(*) desc;
+
+
+
 Number of comments for which we have article data:
 select count(distinct(commentID)) from comments c,articles a where c.assetURL=a.webURL -- 896841
 
