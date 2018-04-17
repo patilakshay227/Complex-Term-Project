@@ -22,7 +22,7 @@ def func1(f):
     c = db.cursor()
 
     fileName = baseDIR + f
-    outFile = open("id" + f, "w")
+    outFile = open("./mappedLIWC/id" + f, "w")
     liwcFile = open(liwcDIR + f.replace('.txt', '') + '_result.txt')
     liwcFile.readline()
     with open(fileName) as fo:
