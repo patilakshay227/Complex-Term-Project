@@ -1,6 +1,16 @@
 delete from comments where assetURL not in ( select distinct(webURL) from articles )
 
 
+-- region wise 
+select keyword, count(*)  from comments c, articleKeywords a, locationState ls , commenterGender cg where c.assetURL = a.webURL and ls.city = c.userLocation  and c.userID = cg.userID and c.username = cg.username and ls.region = 'North East'  and cg.gender = 'female' and keyword not in (select keyword from comments c, articleKeywords a, locationState ls , commenterGender cg where c.assetURL = a.webURL and ls.city = c.userLocation  and c.userID = cg.userID and c.username = cg.username  and cg.gender = 'female' group by a.keyword order by count(*) desc LIMIT 50) group by a.keyword order by count(*) desc LIMIT 10
+
+
+
+-- regionwise male female comparision
+select keyword, count(*)  from comments c, articleKeywords a, locationState ls , commenterGender cg where c.assetURL = a.webURL and ls.city = c.userLocation  and c.userID = cg.userID and c.username = cg.username and ls.region = 'others'  and cg.gender = 'male' and keyword not in ( select keyword from comments c, articleKeywords a, locationState ls , commenterGender cg where c.assetURL = a.webURL and ls.city = c.userLocation  and c.userID = cg.userID and c.username = cg.username and ls.region = 'others'  and cg.gender = 'female' group by a.keyword order by count(*) desc LIMIT 50) group by a.keyword order by count(*) desc LIMIT 10
+
+
+
 --To know the percentage of entities used by females
 select entity, round((count(*) * 100.0)/cast(total as float), 4) from (select sum(cc) as total from (select count(*) as cc from namedEntities where gender = 'female' group by entity having cc > 9 order by cc desc LIMIT 100)),
  namedEntities   where gender =  'female' and entity not in (select entity from namedEntities where gender <> 'andy' group by entity order by count(*) desc LIMIT 15) group by entity  order by count(*) desc LIMIT 100;

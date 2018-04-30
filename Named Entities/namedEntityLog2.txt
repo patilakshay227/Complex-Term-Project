@@ -1,0 +1,695 @@
+(14467591, 17660585, u'oof!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.lb
+(14534131, 21242913, u'Oy.')	Package u'embeddings2.tlh' not found in index
+(14581694, 71763727, u'ok')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.nl
+(14591434, 47386516, u'Amen, SalinasPhil!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.qu
+(14592059, 63351622, u'Organize!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.tr
+(14594614, 61549971, u"van Leeuwenhoek's Disease")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.nl
+(14595420, 25517337, u'Oh spare me.')	Package u'embeddings2.tlh' not found in index
+(14595713, 49452578, u'Render unto Caesar...')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14595975, 46060518, u'Laryngeal spasm')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ga
+(14597573, 71771240, u'Pheochromocytoma ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.gd
+(14598386, 71562888, u'Atelectasis ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14602933, 47726356, u'Pseudoseizures. ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(14603422, 50477004, u'Babesia')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sk
+(14606642, 69908929, u'Abdominal aortic aneurysm')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(14606662, 56448664, u"van Leeuwenhoek's Disease (respiratory myoclonus)")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.nl
+(14607261, 50416479, u'Mirabile lectu!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14610474, 6633940, u'ministroke')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sl
+(14610517, 54044901, u'An American shame. ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(14616224, 63579177, u'"achiever"...')	Package u'embeddings2.sn' not found in index
+(14617679, 25517337, u'stinks')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(14635700, 65923621, u'Bingo.')	Package u'embeddings2.ln' not found in index
+(14642065, 71796925, u'Bingo.')	Package u'embeddings2.ln' not found in index
+(14658711, 63396345, u'DITTO **')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.it
+(14658753, 63396345, u'BINGO **')	Package u'embeddings2.ln' not found in index
+(14677498, 65724810, u'Amen, Suzanne!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(14689882, 40024727, u'Liberals!? Pu-leeze! ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ca
+(14691873, 32140220, u'#3rdtermforObama')	Package u'embeddings2.st' not found in index
+(14700447, 25082677, u'Murderers.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(14705599, 55704240, u'Ai yai yai')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pt
+(14748457, 57645111, u"Bravo for calling a 'spade a spade'!")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(14748809, 54640636, u"Noli me tangere!!!! (non mi toccare, don't touch me)")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.it
+(14751329, 56629643, u'& dr. Faye.')	Package u'embeddings2.kha' not found in index
+(14758679, 30844621, u'Curses!!!!!!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ca
+(14760848, 71902976, u'ditto')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.it
+(14764712, 19271414, u'Gave me a nice chuckle.')	Package u'embeddings2.hmn' not found in index
+(14773582, 68598222, u'Oxytocin, actually....')	Package u'embeddings2.ha' not found in index
+(14784856, 63537477, u'150 minutes -2 1/2 hours ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.cs
+(14790661, 20826384, u"don't forget canned beets")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(14794083, 31347101, u'yawwwwn!')	Package u'embeddings2.ha' not found in index
+(14827381, 32700530, u'He never was very funny')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(14836377, 17660585, u'meh')	Package u'embeddings2.tlh' not found in index
+(14839218, 69578550, u'Go Bernie!!!')	Package u'embeddings2.tn' not found in index
+(14843265, 1976085, u'www.berniesanders.com')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ms
+(14843769, 26979760, u'Pity.')	Package u'embeddings2.na' not found in index
+(14859753, 51905269, u'Congratulations Victor Espinoza!  ')	[Errno 104] Connection reset by peer
+(14877581, 71997503, u'Queria que o Brasil tivesse lei assim como  no pa\xeds de voces.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pt
+(14878597, 64542232, u'"Quid Pro Cuomo," love it!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(14884174, 8161796, u'poppycock')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(14884481, 67497857, u"That's BERNIE SANDERS! ")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(14887614, 25517337, u'Yay for mischief!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(14895147, 71516097, u'Voila.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.fr
+(14898862, 72023179, u'Polymyositis vs myasthenia gravis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14900134, 66271455, u'Type III SMA')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.id
+(14900237, 63583418, u'Mitochondrial disease, Complex I disorder.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.mg
+(14900387, 58920632, u'Porphyria')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14901716, 64462221, u'Classy, honest, brave.  ')	Package u'embeddings2.un' not found in index
+(14902072, 64781583, u'Tay-Sachs')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.vi
+(14906162, 61750812, u'ALS')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.nl
+(14907070, 43404551, u'Polymyositis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14907423, 72027986, u'Myasthenia Gravis. Tensilon test.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14908639, 65337152, u'Dystonia')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.fo
+(14911343, 68154095, u'Denmark')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(14912988, 42622838, u'Bingo!')	Package u'embeddings2.ln' not found in index
+(14914681, 72032602, u'Tardive Dyskenesia')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pl
+(14921394, 72037969, u'Myasthenia Gravis ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14928216, 72043590, u'\u4f60\u4f3c\u4e4e\u597d\u50cf\u5f88\u4e86\u89e3\u8fd9\u4e2a\u884c\u4e1a\u3002\u7b14\u8005\u8bf4\u7684\u90a3\u4e9b\u4e8b\u662f\u5b8c\u5b8c\u5168\u5168\u771f\u5b9e\u7684\uff0c\u5e76\u4e14\u5b58\u5728\u7684\uff0c\u5979\u5e76\u6ca1\u6709\u4e71\u8bf4\uff0c\u73b0\u5b9e\u751a\u81f3\u6bd4\u8fd9\u4e2a\u66f4\u6b8b\u9177\uff01\u4f60\u6839\u672c\u6ca1\u5e72\u8fc7\u8fd9\u884c\uff0c\u800c\u4e14\u4f60\u4e5f\u6839\u672c\u4e0d\u61c2\u8fd9\u884c\u5bf9\u8eab\u4f53\u7684\u5065\u5eb7\u4f24\u5bb3\u6709\u591a\u5927!!\u6211\u672c\u4eba\u5c31\u662f\u505a\u7f8e\u7532\u7684\uff0c\u591a\u6570\u4ece\u4e8b\u8fd9\u884c\u7684\u4eba\u6709\u810a\u67f1\u8ddf\u8116\u5b50\u65b9\u9762\u7684\u75be\u75c5\uff0c\u56e0\u4e3a\u6bcf\u5929\u90fd\u8981\u4f4e\u5934\u5de5\u4f5c\u597d\u4e45\u3002\u5f88\u591a\u6307\u7532\u5e97\u662f\u4e0d\u7ed9\u5e95\u85aa\u7684\uff0c\u53ea\u6709\u5206\u8d26\u3002\u5728\u6ca1\u6709\u5ba2\u4eba\u7684\u60c5\u51b5\u4e0b \u53ef\u80fd\u4e00\u5929\u53ea\u80fd\u6323\u5230\u51e0\u5757\u7f8e\u91d1\uff01\u4f60\u6240\u8bf4\u7684\u4e00\u5929\u80fd\u6323\u4e00\u4e24\u767e\u5757\u94b1\u7684\u5e97\u786e\u5b9e\u6709\uff0c\u4f46\u662f\u90fd\u662f\u7528\u82e6\u529b\u6362\u7684\uff01\u8981\u505a\u7684\u5feb\u505a\u7684\u591a\u624d\u6709\u8fd9\u4e48\u591a\u94b1\uff0c\u8fd8\u6709\u4e0d\u505c\u5730\u5411\u5ba2\u4eba\u63a8\u9500\u9644\u52a0\u670d\u52a1 \uff08\u6bd4\u5982\u6309\u6469\uff0cSPA\uff09\u4ece\u800c\u6323\u53d6\u767e\u5206\u4e4b\u4e00\u7684\u62bd\u6210\uff0c\u4e00\u5929\u4e0b\u6765\u7d2f\u7684\u5230\u56de\u5bb6\u6d17\u6fa1\u7684\u529b\u6c14\u90fd\u6ca1\u6709\u3002\u800c\u4e14\u4e0d\u662f\u6bcf\u5929\u751f\u610f\u90fd\u5982\u6b64\u706b\u7206\uff0c\u793c\u62dc\u5934\u7684\u65f6\u5019\u53ef\u80fd\u4e00\u5929\u53ea\u80fd\u63a5\u4e0a\u56db\u4e94\u4e2a\u5ba2\u4eba\uff0c\u6323\u4e2a\u4e8c\u4e09\u5341\u5757\u5c0f\u8d39\u4e5f\u662f\u5f88\u6b63\u5e38\u7684\u3002\u6ca1\u6709\u751f\u610f\u7684\u65f6\u5019\u8fd8\u6709\u62c5\u5fc3\u8001\u677f\u4f1a\u4e0d\u5f00\u5fc3\u4ece\u800c\u7ed9\u4f60\u4e00\u4e9b\u4f60\u5de5\u4f5c\u8303\u56f4\u5916\u7684\u9644\u52a0\u5de5\u4f5c\uff0c\u8001\u677f\u5fc3\u60c5\u4e0d\u597d\u5c31\u62ff\u6211\u4eec\u51fa\u6c14\u4e5f\u662f\u5e38\u4e8b\uff0c\u751f\u610f\u597d\u7684\u5e97\u8001\u677f\u6b3a\u8d1f\u5458\u5de5\u66f4\u662f\u591a\u7684\u6570\u4e0d\u8fc7\u6765\u3002\u4f60\u505a\u8fc7\u8fd9\u884c\u5417\u4f60\u5c31\u8fd9\u6837\u8bc4\u4ef7\uff1f\u6211\u4eec\u8fd9\u4e9b\u4eba\u6323\u7684\u90fd\u662f\u7528\u8840\u6c57\u6362\u6765\u7684\u94b1\uff0c\u5176\u4e2d\u7684\u8f9b\u82e6\u66f4\u662f\u4f60\u8fd9\u4e2a\u5916\u884c\u6839\u672c\u4e0d\u80fd\u4f53\u4f1a\u5230\u7684')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.zh
+(14933285, 72047803, u'i agrree')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.gv
+(14940297, 337474, u'Gesundheit?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.de
+(14951709, 57771928, u'Yuck!  I find this mere hypocrisy.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(14960825, 65166046, u'Get a Toyota.')	Package u'embeddings2.xh' not found in index
+(14962570, 18025296, u'Boo-urns')	Package u'embeddings2.wo' not found in index
+(14970073, 69019327, u'Grazie')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.it
+(14971151, 20826384, u"I'm sorry ")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.fy
+(14981418, 69542758, u'Agree 100% KN!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.hr
+(14982347, 58957024, u'ugh ugh ugh')	Package u'embeddings2.tlh' not found in index
+(14984180, 68762251, u'Meme-ing 101.')	Package u'embeddings2.jw' not found in index
+(14985100, 1980661, u'Um, pancake batter...')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pt
+(14988406, 71878496, u"Go get'em Champ!")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pt
+(14994644, 71516097, u'Altamont')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pt
+(14998727, 706863, u'*whew*')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.tl
+(15009566, 67386516, u'BDS Israel. Free Palestine. ')	[Errno 104] Connection reset by peer
+(15020169, 65950535, u'Sacajawea, too.')	[Errno 104] Connection reset by peer
+(15038294, 72142998, u'I agree 100% Kat')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ms
+(15038320, 69400221, u'Solidarity! Viva la revolucion.  ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.oc
+(15041844, 40046882, u'Go Bernie Go!')	Package u'embeddings2.tn' not found in index
+(15086694, 70089040, u'Get ready, Tina fey.')	Package u'embeddings2.xh' not found in index
+(15106622, 56087571, u'I concur.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.id
+(15106866, 62463532, u'Stay classy Bill.')	Package u'embeddings2.un' not found in index
+(15110338, 45091390, u'Meh.')	Package u'embeddings2.tlh' not found in index
+(15111644, 65458822, u'Congratulations NYT!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(15113127, 26434155, u'TY Scot')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ro
+(15129159, 27473667, u'Bernie Sanders.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pl
+(15130838, 61549971, u'temporal arteritis?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(15131495, 15888295, u'Moya Moya')	Package u'embeddings2.ts' not found in index
+(15131553, 64516611, u'Trichenella')	Package u'embeddings2.sn' not found in index
+(15131653, 15888295, u'Temporal arteritis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(15131825, 61787992, u'Loa Loa')	Package u'embeddings2.haw' not found in index
+(15132012, 60677403, u'Malaria')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.uz
+(15132346, 69642263, u'Tapeworm')	Package u'embeddings2.xh' not found in index
+(15133051, 69642263, u'Tapeworm')	Package u'embeddings2.xh' not found in index
+(15133516, 61397772, u"L'etat, c'est  moi!")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.fr
+(15133533, 6762447, u'Patent Foramen Ovale')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(15134040, 72218733, u'Takayasu Arteritis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(15134239, 21385475, u'ITP + toxicariasis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pl
+(15134371, 27360116, u'trichenella or echinococcosis')	Package u'embeddings2.sn' not found in index
+(15134486, 72219005, u'Parasites')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ms
+(15134776, 71449788, u'Neurosyphilis')	Package u'embeddings2.zu' not found in index
+(15134842, 276790, u'Cysticercosis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.cy
+(15134879, 64953581, u'Cerebral malaria.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.uz
+(15135000, 62777642, u'Temporal arteritis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(15135013, 61080456, u'MELAS')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ms
+(15135413, 40864158, u'Cysticercosis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.cy
+(15135692, 37755097, u'gnathostomiasis')	Package u'embeddings2.un' not found in index
+(15136913, 71761491, u'Glaucoma!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.de
+(15137040, 67079651, u'Sarcoidosis?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ro
+(15137090, 66287227, u'Ancylostomiasis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pl
+(15137149, 72221090, u'Onchocerca volvulus')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(15137287, 63629984, u'Loiasis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.lt
+(15137481, 70410957, u'A worm. Filariasisi')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.uz
+(15137542, 67929026, u'Loa loa filariasis!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.uz
+(15137580, 71252852, u'Cysticercosis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.cy
+(15137912, 61696085, u'Cerebral malaria. ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.uz
+(15138127, 72221901, u'Parasites')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ms
+(15138143, 72221928, u'Atherosclerosis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.eo
+(15138161, 72221917, u'Filariasis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.uz
+(15138201, 72221972, u'Glaucoma?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.de
+(15138210, 72221957, u'Cerebral malaria')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.uz
+(15138370, 72222131, u'African trypanosomiasis?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pl
+(15138425, 72222131, u'African Trypanosomiasis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pl
+(15138607, 68059974, u'Loa Loa ')	Package u'embeddings2.haw' not found in index
+(15138616, 71761491, u'Glaucoma!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.de
+(15138640, 72222309, u'Parasite')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ms
+(15139093, 47483898, u'jonathan pollard')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.id
+(15139132, 72222553, u'GNATHOSTOMIASIS')	Package u'embeddings2.un' not found in index
+(15139198, 66697355, u'Loa Loa')	Package u'embeddings2.haw' not found in index
+(15139808, 72222858, u'Hemiplegic migraine')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ga
+(15139853, 72222861, u'Shistocercosis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.it
+(15140109, 14657396, u'Schistosomiasis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pl
+(15140529, 36652818, u'Onchocerciasis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(15140886, 72223307, u'Parvovirus?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ia
+(15141317, 52091449, u'Onchocerciasis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(15141926, 72223771, u'Multiple Sclerosis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.eo
+(15142236, 72222861, u'shistocercosis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.it
+(15142800, 53872022, u'CADSIL')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.cs
+(15142905, 71801376, u'Toxocariasis')	Package u'ner2.gl' not found in index
+(15143243, 6215054, u'Amaurosis fugax')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(15143619, 67579586, u'Schistosomiasis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pl
+(15143865, 63392823, u'Moyamoya')	Package u'embeddings2.zu' not found in index
+(15143886, 59761377, u'Parasites. Bilharzia?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sk
+(15144234, 70681571, u'Guinea worm disease')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.war
+(15144586, 66947428, u'Moyamoya!')	Package u'embeddings2.zu' not found in index
+(15144930, 72227768, u'Migraine.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ga
+(15144964, 68575501, u'Toxoplasmosis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.no
+(15145658, 67700335, u'congenital dysfibrinogenemia?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.no
+(15154001, 57169385, u'Um, . . . American women.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pt
+(15157468, 25539324, u'Oh pluheeeeeeeze!')	[Errno 104] Connection reset by peer
+(15163756, 52035980, u'Moya Moya')	Package u'embeddings2.ts' not found in index
+(15169395, 58982779, u'Jean Valjean.  Sickening.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.de
+(15172557, 58957024, u'Yo!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ht
+(15175206, 72267706, u'Hiss')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.az
+(15176430, 28217552, u'Fooey.')	Package u'embeddings2.aa' not found in index
+(15176526, 68938459, u'HABEAS?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(15177284, 72274720, u'Loa loa / Onchocera Volvulus ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(15182270, 62809301, u'Fleur de mal!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(15192134, 63367016, u'Or Imuran (azathioprine).')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.tk
+(15199304, 62876450, u'joie de vivre!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.fr
+(15206114, 18043107, u'Bingo!')	Package u'embeddings2.ln' not found in index
+(15208751, 60104105, u'Dean S, Charlie McCarthy')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15248493, 3127789, u'Fantastico! ')	Package u'embeddings2.aa' not found in index
+(15251322, 68548861, u'Potential')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(15259952, 66385812, u'Bingo.')	Package u'embeddings2.ln' not found in index
+(15263754, 59544565, u'Hallelujah!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.yo
+(15273189, 30131571, u'disgusting ')	Package u'embeddings2.ie' not found in index
+(15277760, 40016103, u'Hilarious!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.uz
+(15287599, 39601591, u"\xbfMIAMI es una palabra espa\xf1ola? No creo que s\xed.  Es una tribu ind\xedgena con su propia lengua. (Disputing that MIAMI is of Hispanic origin.) Easy puzzle for polyglots, but for the typical Monday solver?  I don't think so.")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.es
+(15304753, 72368358, u'Diddo!!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.cy
+(15308556, 54656940, u"That '70s Chow")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15316539, 48936933, u'Harold Stassen wannabe.')	Package u'embeddings2.ha' not found in index
+(15317244, 54656940, u"That '70s Chow")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15322231, 48235711, u'Obamacare!   ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.it
+(15324334, 26434155, u'Hallelujah!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.yo
+(15327332, 67528373, u"Um. Sock puppets.  'Nuff said.")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pt
+(15334464, 33068568, u'Mazel Tov!!! ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.tr
+(15338740, 66641761, u'Gun Control')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.gd
+(15342268, 19880737, u'Congratulations!')	Package u'embeddings2.zzp' not found in index
+(15355501, 59965228, u'Ugh!')	Package u'embeddings2.tlh' not found in index
+(15359346, 67896430, u'Prexit')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(15380147, 68378921, u'Parvovirus b19')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ia
+(15380760, 68378921, u'Parvovirus b19')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ia
+(15381646, 62801818, u'Autism')	Package u'embeddings2.bi' not found in index
+(15381753, 60432709, u'Hashimoto- Pritzker Histiocytosis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(15382241, 72425467, u'Congenital rubella')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.no
+(15383587, 68541400, u"That's funny")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15384925, 65124947, u"Go A's!")	Package u'embeddings2.tn' not found in index
+(15398726, 5455350, u'Fantastic!  Just fantastic!')	Package u'embeddings2.aa' not found in index
+(15415758, 56617226, u"They're just as callous as they ever were, which is pretty callous.")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15428334, 18944188, u'Bernie for Vice President!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15447527, 56899876, u'reductio ad absurdum')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(15461304, 14120465, u'Ben Affleck?')	Package u'ner2.gl' not found in index
+(15504828, 25517337, u'Hilarious.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.uz
+(15504880, 25517337, u'Whoa Nellie. Wow.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.it
+(15510767, 63262940, u'Pollard betrayed his country. ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15512542, 69929469, u'Yuk.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.tt
+(15514469, 50970463, u'9/11')	Package u'embeddings2.un' not found in index
+(15514913, 7388365, u'Well said, Craig Geary - well said!!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15516788, 43135612, u'Ditto.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.it
+(15521544, 10741712, u'Is "humility" a virtue ?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15532890, 47440624, u'Nader redux.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.af
+(15540107, 72489512, u'BIngo!')	Package u'embeddings2.ln' not found in index
+(15545643, 71700966, u'Jealousy.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.tk
+(15545778, 49970705, u'FANTASTIC !')	Package u'embeddings2.aa' not found in index
+(15545997, 25994701, u'Bingo!')	Package u'embeddings2.ln' not found in index
+(15598192, 68499124, u'AG: Amen!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ga
+(15616589, 54480690, u'Dear Ms. Dunbar, I agree.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15639417, 57076816, u"Au secours, au secours, je suis gauche derriere! (sorry, couldn't resist)")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.fr
+(15641974, 57595872, u'Trump.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15645828, 55953118, u'Viva Trump on illegals')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15645911, 57856608, u'Irony?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.mg
+(15650918, 67514964, u'Jerry Maguire?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.gv
+(15657442, 31638827, u"I'd prefer Sanders/Biden.")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.eu
+(15657549, 63801538, u'Marathon imitates life.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(15662487, 62202295, u'Heinlein!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.fo
+(15665262, 2826823, u'Greta Garbo.')	Package u'embeddings2.aa' not found in index
+(15704592, 60404101, u'Trigeminal neuralgia')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.fy
+(15704747, 59249214, u'Aneurysm')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(15705535, 40921098, u'Glaucoma?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.de
+(15705623, 54624260, u'iritis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.eu
+(15707968, 72425280, u'Migraine?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ga
+(15708035, 72635927, u'Temporal Arteritis ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(15709701, 72637110, u'Paroxysmal hemicrania')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ia
+(15710567, 33403598, u'Mucormycosis')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sv
+(15712294, 58482586, u'Trigeminal neuralgia')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.fy
+(15715174, 1095279, u'Best. NYT. Comment. Evah.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.da
+(15719194, 54624260, u'Classic. Iconic. Lovely.')	Package u'embeddings2.un' not found in index
+(15746146, 72268804, u'BINGO')	Package u'embeddings2.ln' not found in index
+(15759030, 279790, u"If Trump wins I'll for Liberland (maybe).")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15759691, 35714278, u'https://books.google.com/books?id=DaaRl5BZFLgC&amp;pg=PA180&amp;lpg=PA18...')	Package u'embeddings2.un' not found in index
+(15771362, 3127789, u'I concur! ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.id
+(15781927, 17834643, u'Booyah!')	[Errno 104] Connection reset by peer
+(15791981, 67497857, u"I get it, I'll vote for Bernie Sanders.")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15797662, 37368871, u'Bernie Sanders for President.  Edward Snowden for Vice President.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(15802622, 62499561, u'Boo hiss.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.az
+(16154462, 66248146, u'Wha??? Talk about a non sequitur.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(16154466, 14166325, u'viva canada!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sl
+(16159571, 6266879, u'Fleas are a nuisance but not deadly.  ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(16173309, 68846032, u'OFFENSICHTLICH, HAT ER GESCHICKTE HAENDE; ABER SEIN GEHIRN IST EINGEFRIERT...LEIDER')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.de
+(16177722, 63422441, u'I go.')	Package u'embeddings2.tn' not found in index
+(16177986, 73047346, u'correctas palabras')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.es
+(16201646, 4643497, u'Get Adele back!')	Package u'embeddings2.xh' not found in index
+(16207199, 53508099, u'218')	Package u'embeddings2.un' not found in index
+(16216213, 69409352, u'I love this team. Buena suerte!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.es
+(16224407, 22739177, u'Draco Malfoy?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.eo
+(14339826, 70679878, u'Non Hodgkin Lymphoma')	Package u'ner2.gl' not found in index
+(14418122, 1444827, u'Et tu, Maureen? ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14467694, 21748893, u'Plutarchs?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14477236, 17940785, u'Eleanor Roosevelt.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.gv
+(14508461, 8562342, u'Sauce for the goose ... .')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(14546061, 44225776, u'$33,333???????????????????????')	Package u'embeddings2.un' not found in index
+(14564542, 29742030, u'Jesus weeps.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.id
+(14580357, 71524210, u'Yaah!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.id
+(14586371, 38080356, u'"Do be do be do." -- Frank Sinatra ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.mg
+(14587405, 65370878, u'O tempora! O mores!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14588166, 14762948, u"We ain't.")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.sco
+(14591629, 557735, u'Duh.')	Package u'embeddings2.za' not found in index
+(14595266, 66742753, u"van Leeuwenhoek's Disease")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.nl
+(14595313, 66742753, u"Respiratory myoclonus (van Leeuwenhoek's Disease)")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.nl
+(14595433, 63651069, u'Respiratory myoclonus')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14596050, 71770577, u'SIADH')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ga
+(14599492, 71772002, u'Angor pectoris')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14600053, 71137971, u"van Leeuwenhoek's Disease ")	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.nl
+(14600746, 7134242, u'igpay atinlay iveslay!!!')	Package u'embeddings2.zzp' not found in index
+(14601243, 2323604, u'Caviar emptor.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.pt
+(14601587, 41260666, u'Angina pectoris?')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14601729, 12280401, u'paraganglioma')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.ms
+(14602492, 63481474, u'Pheochromocytoma')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.gd
+(14602609, 71773200, u'Isocapnic hyperpnea')	Package u'embeddings2.ak' not found in index
+(14604681, 66522918, u'Ad maiora!')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14605116, 41811047, u'Magno gaudio quod scripsisti legi. Utinam lectiones linguae latinae per totam Nationem discipulis tradantur! immo per totum orbem, si liceat, dicam. Verum nobilissima haec lingua id in se meretur, ast deliquare utique non nocet perutile fore latinum discere et cognoscere sermonem ad linguam patriam, anglicam nempe (aliamve), rectius adhibendam. Enimvero qui linguam latinam bene calleant non tantum originem dignoscere valebunt - et quidem subtiliorem significationem -  plurimorum anglici sermonis verborum sed et grammaticae et syntaxis altius intellegere principia, quibus anglice loquendo et scribendo utantur. ')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14605725, 11594615, u'Tempus fugit.')	This resource is available in the index but not downloaded, yet. Try to run
+
+polyglot download embeddings2.la
+(14605798, 65914614, u'..OY VEY!!')	Package u'embeddings2.mfe' not found in index
+(14608280, 23130551, u'Oh yeah?')	Package u'embeddings2.tlh' not found in index
